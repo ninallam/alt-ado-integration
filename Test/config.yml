@@ -1,5 +1,5 @@
 testId: MyGitHubPodcastTest
-displayName: My GitHub podcast test
+displayName: My ADO podcast test
 testPlan: DemoPodcastTest.jmx
 description: ''
 engineInstances: 5
