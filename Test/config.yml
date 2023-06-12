@@ -1,4 +1,4 @@
-testId: MyGitHubPodcastTest
+testId: MyADOPodcastTest
 displayName: My ADO podcast test
 testPlan: DemoPodcastTest.jmx
 description: ''
@@ -11,3 +11,4 @@ failureCriteria:
 - Podcast page: p90(response_time_ms) > 10000
 - Homepage: p90(response_time_ms) > 60000
 - percentage(error) >  10
+
