@@ -7,7 +7,7 @@ variables:
   serviceConnection: 'ALT-Test'
   loadTestResource: 'Demo-Podcast-EUS'
   loadTestResourceGroup: 'demo-podcast'
-  location: 'EAST US'
+  webAppName: 'demo-podcastwebapp'
 
 stages:
 - stage: LoadTest
@@ -24,6 +24,12 @@ stages:
         loadTestConfigFile: 'Test/config.yml'
         resourceGroup: $(loadTestResourceGroup)
         loadTestResource: $(loadTestResource)
-          
+        env: |
+            [
+              {
+              "name": "webapp",
+              "value": "$(webAppName).azurewebsites.net"
+              }
+            ]
     - publish: $(System.DefaultWorkingDirectory)/loadTest
       artifact: results
