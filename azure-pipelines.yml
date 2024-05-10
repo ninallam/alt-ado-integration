@@ -4,9 +4,9 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  serviceConnection: 'ALT-Test'
-  loadTestResource: 'Demo-Podcast-EUS'
-  loadTestResourceGroup: 'demo-podcast'
+  serviceConnection: 'nikita-workload-id-sc'
+  loadTestResource: 'cool-new-resource'
+  loadTestResourceGroup: 'nikita-rg'
   webAppName: 'demo-podcastwebapp'
 
 stages:
